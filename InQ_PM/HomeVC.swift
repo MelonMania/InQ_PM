@@ -16,9 +16,12 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.reloadData()
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.layer.cornerRadius = 30
+        
+        tableView.estimatedRowHeight = 200
+        tableView.rowHeight = UITableView.automaticDimension
         infoView.layer.cornerRadius = 30
     }
 }
@@ -35,9 +38,21 @@ extension HomeVC : UITableViewDelegate, UITableViewDataSource {
         let target = ProjectData.dummy[indexPath.row]
         
         cell.cellTitle.text = target.title
+        cell.frame.size.width = tableView.frame.size.width // tableViewCell 너비 자동 설정
         return cell
     }
-
+    
+    /*func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        var heightOfTableView : CGFloat = 0.0
+        let cells = self.tableView.visibleCells
+        for cell in cells {
+            heightOfTableView += cell.frame.height
+        }
+        
+        return heightOfTableView
+    }*/
+    
+    
 }
 
 
