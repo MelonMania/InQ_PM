@@ -16,6 +16,8 @@
 		17D0788C27A25F4700B7DD18 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0788B27A25F4700B7DD18 /* HomeVC.swift */; };
 		17D0788E27A262CF00B7DD18 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0788D27A262CE00B7DD18 /* CustomTableViewCell.swift */; };
 		17D0789627A293D500B7DD18 /* ProjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0789527A293D500B7DD18 /* ProjectData.swift */; };
+		17D0789827A6214000B7DD18 /* ProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0789727A6214000B7DD18 /* ProjectVC.swift */; };
+		17D0789A27A62DE600B7DD18 /* RecruitingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0789927A62DE600B7DD18 /* RecruitingVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		17D0788B27A25F4700B7DD18 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		17D0788D27A262CE00B7DD18 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		17D0789527A293D500B7DD18 /* ProjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectData.swift; sourceTree = "<group>"; };
+		17D0789727A6214000B7DD18 /* ProjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectVC.swift; sourceTree = "<group>"; };
+		17D0789927A62DE600B7DD18 /* RecruitingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitingVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				17BC91672796D4AE0058FC1F /* SceneDelegate.swift */,
 				17BC91692796D4AE0058FC1F /* LogInVC.swift */,
 				17D0788B27A25F4700B7DD18 /* HomeVC.swift */,
+				17D0789727A6214000B7DD18 /* ProjectVC.swift */,
+				17D0789927A62DE600B7DD18 /* RecruitingVC.swift */,
 				17D0789527A293D500B7DD18 /* ProjectData.swift */,
 				17D0788D27A262CE00B7DD18 /* CustomTableViewCell.swift */,
 				17BC916B2796D4AE0058FC1F /* Main.storyboard */,
@@ -149,8 +155,10 @@
 			files = (
 				17D0788E27A262CF00B7DD18 /* CustomTableViewCell.swift in Sources */,
 				17BC916A2796D4AE0058FC1F /* LogInVC.swift in Sources */,
+				17D0789A27A62DE600B7DD18 /* RecruitingVC.swift in Sources */,
 				17BC91662796D4AE0058FC1F /* AppDelegate.swift in Sources */,
 				17D0789627A293D500B7DD18 /* ProjectData.swift in Sources */,
+				17D0789827A6214000B7DD18 /* ProjectVC.swift in Sources */,
 				17D0788C27A25F4700B7DD18 /* HomeVC.swift in Sources */,
 				17BC91682796D4AE0058FC1F /* SceneDelegate.swift in Sources */,
 			);
