@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17734E6327AA049C002853FD /* TabPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17734E6227AA049C002853FD /* TabPageCollectionViewCell.swift */; };
 		17BC91662796D4AE0058FC1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BC91652796D4AE0058FC1F /* AppDelegate.swift */; };
 		17BC91682796D4AE0058FC1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BC91672796D4AE0058FC1F /* SceneDelegate.swift */; };
 		17BC916A2796D4AE0058FC1F /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BC91692796D4AE0058FC1F /* LogInVC.swift */; };
@@ -18,9 +19,11 @@
 		17D0789627A293D500B7DD18 /* ProjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0789527A293D500B7DD18 /* ProjectData.swift */; };
 		17D0789827A6214000B7DD18 /* ProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0789727A6214000B7DD18 /* ProjectVC.swift */; };
 		17D0789A27A62DE600B7DD18 /* RecruitingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0789927A62DE600B7DD18 /* RecruitingVC.swift */; };
+		17D0789C27A6D08900B7DD18 /* TabBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0789B27A6D08900B7DD18 /* TabBarCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17734E6227AA049C002853FD /* TabPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPageCollectionViewCell.swift; sourceTree = "<group>"; };
 		17BC91622796D4AE0058FC1F /* InQ_PM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InQ_PM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17BC91652796D4AE0058FC1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17BC91672796D4AE0058FC1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		17D0789527A293D500B7DD18 /* ProjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectData.swift; sourceTree = "<group>"; };
 		17D0789727A6214000B7DD18 /* ProjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectVC.swift; sourceTree = "<group>"; };
 		17D0789927A62DE600B7DD18 /* RecruitingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitingVC.swift; sourceTree = "<group>"; };
+		17D0789B27A6D08900B7DD18 /* TabBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +75,12 @@
 				17BC91692796D4AE0058FC1F /* LogInVC.swift */,
 				17D0788B27A25F4700B7DD18 /* HomeVC.swift */,
 				17D0789727A6214000B7DD18 /* ProjectVC.swift */,
+				17D0789B27A6D08900B7DD18 /* TabBarCollectionViewCell.swift */,
 				17D0789927A62DE600B7DD18 /* RecruitingVC.swift */,
 				17D0789527A293D500B7DD18 /* ProjectData.swift */,
 				17D0788D27A262CE00B7DD18 /* CustomTableViewCell.swift */,
 				17BC916B2796D4AE0058FC1F /* Main.storyboard */,
+				17734E6227AA049C002853FD /* TabPageCollectionViewCell.swift */,
 				17BC916E2796D4B00058FC1F /* Assets.xcassets */,
 				17BC91702796D4B00058FC1F /* LaunchScreen.storyboard */,
 				17BC91732796D4B00058FC1F /* Info.plist */,
@@ -154,10 +160,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				17D0788E27A262CF00B7DD18 /* CustomTableViewCell.swift in Sources */,
+				17734E6327AA049C002853FD /* TabPageCollectionViewCell.swift in Sources */,
 				17BC916A2796D4AE0058FC1F /* LogInVC.swift in Sources */,
 				17D0789A27A62DE600B7DD18 /* RecruitingVC.swift in Sources */,
 				17BC91662796D4AE0058FC1F /* AppDelegate.swift in Sources */,
 				17D0789627A293D500B7DD18 /* ProjectData.swift in Sources */,
+				17D0789C27A6D08900B7DD18 /* TabBarCollectionViewCell.swift in Sources */,
 				17D0789827A6214000B7DD18 /* ProjectVC.swift in Sources */,
 				17D0788C27A25F4700B7DD18 /* HomeVC.swift in Sources */,
 				17BC91682796D4AE0058FC1F /* SceneDelegate.swift in Sources */,
