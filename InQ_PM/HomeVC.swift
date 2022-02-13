@@ -20,7 +20,6 @@ class HomeVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.estimatedRowHeight = 200
         tableView.rowHeight = UITableView.automaticDimension
         infoView.layer.cornerRadius = 30
     }
@@ -37,20 +36,35 @@ extension HomeVC : UITableViewDelegate, UITableViewDataSource {
         let cell : CustomTableViewCell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell", for: indexPath) as! CustomTableViewCell
         let target = ProjectData.dummy[indexPath.row]
         
-        cell.cellTitle.text = target.title
+        cell.cellTitle.text = target.isExpanded ? target.text : target.title
         cell.frame.size.width = tableView.frame.size.width // tableViewCell 너비 자동 설정
         return cell
     }
     
-    /*func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        var heightOfTableView : CGFloat = 0.0
-        let cells = self.tableView.visibleCells
-        for cell in cells {
-            heightOfTableView += cell.frame.height
-        }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell : CustomTableViewCell = tableView.cellForRow(at: indexPath) as? CustomTableViewCell else { return }
+        var target = ProjectData.dummy[indexPath.row]
         
-        return heightOfTableView
-    }*/
+        // 1.
+        target.isExpanded = !target.isExpanded
+        ProjectData.dummy[indexPath.row] = target
+        
+        cell.cellTitle.text = target.isExpanded ? target.text : target.title
+        
+        // 2.
+        tableView.beginUpdates()
+        tableView.endUpdates()
+        
+    }
+    /*func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+     var heightOfTableView : CGFloat = 0.0
+     let cells = self.tableView.visibleCells
+     for cell in cells {
+     heightOfTableView += cell.frame.height
+     }
+     
+     return heightOfTableView
+     }*/
     
     
 }

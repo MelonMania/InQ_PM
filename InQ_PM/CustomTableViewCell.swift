@@ -27,7 +27,7 @@ class CustomTableViewCell: UITableViewCell {
         super.layoutSubviews()
         
         configure()
-        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0))
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 0))
     }
     
     func configure() {

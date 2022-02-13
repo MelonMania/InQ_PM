@@ -20,6 +20,7 @@
 		17D0789827A6214000B7DD18 /* ProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0789727A6214000B7DD18 /* ProjectVC.swift */; };
 		17D0789A27A62DE600B7DD18 /* RecruitingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0789927A62DE600B7DD18 /* RecruitingVC.swift */; };
 		17D0789C27A6D08900B7DD18 /* TabBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0789B27A6D08900B7DD18 /* TabBarCollectionViewCell.swift */; };
+		17D8B08827B8EADF007698EC /* JoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D8B08727B8EADF007698EC /* JoinVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		17D0789727A6214000B7DD18 /* ProjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectVC.swift; sourceTree = "<group>"; };
 		17D0789927A62DE600B7DD18 /* RecruitingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitingVC.swift; sourceTree = "<group>"; };
 		17D0789B27A6D08900B7DD18 /* TabBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCollectionViewCell.swift; sourceTree = "<group>"; };
+		17D8B08727B8EADF007698EC /* JoinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				17D0789527A293D500B7DD18 /* ProjectData.swift */,
 				17D0788D27A262CE00B7DD18 /* CustomTableViewCell.swift */,
 				17BC916B2796D4AE0058FC1F /* Main.storyboard */,
+				17D8B08727B8EADF007698EC /* JoinVC.swift */,
 				17734E6227AA049C002853FD /* TabPageCollectionViewCell.swift */,
 				17BC916E2796D4B00058FC1F /* Assets.xcassets */,
 				17BC91702796D4B00058FC1F /* LaunchScreen.storyboard */,
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17D0788E27A262CF00B7DD18 /* CustomTableViewCell.swift in Sources */,
+				17D8B08827B8EADF007698EC /* JoinVC.swift in Sources */,
 				17734E6327AA049C002853FD /* TabPageCollectionViewCell.swift in Sources */,
 				17BC916A2796D4AE0058FC1F /* LogInVC.swift in Sources */,
 				17D0789A27A62DE600B7DD18 /* RecruitingVC.swift in Sources */,
