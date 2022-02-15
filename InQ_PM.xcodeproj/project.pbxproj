@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		17734E6327AA049C002853FD /* TabPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17734E6227AA049C002853FD /* TabPageCollectionViewCell.swift */; };
+		17B3EC7027BA373900F74B4E /* RealProjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3EC6F27BA373900F74B4E /* RealProjectData.swift */; };
+		17B3EC7227BA3D3700F74B4E /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3EC7127BA3D3700F74B4E /* CardTableViewCell.swift */; };
+		17B3EC7427BB083B00F74B4E /* ProceedingProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3EC7327BB083B00F74B4E /* ProceedingProjectVC.swift */; };
+		17B3EC9C27BB21A600F74B4E /* IngProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3EC9B27BB21A600F74B4E /* IngProjectVC.swift */; };
+		17B3EC9E27BB265500F74B4E /* DoneProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3EC9D27BB265500F74B4E /* DoneProjectVC.swift */; };
 		17BC91662796D4AE0058FC1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BC91652796D4AE0058FC1F /* AppDelegate.swift */; };
 		17BC91682796D4AE0058FC1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BC91672796D4AE0058FC1F /* SceneDelegate.swift */; };
 		17BC916A2796D4AE0058FC1F /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BC91692796D4AE0058FC1F /* LogInVC.swift */; };
@@ -25,6 +30,11 @@
 
 /* Begin PBXFileReference section */
 		17734E6227AA049C002853FD /* TabPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPageCollectionViewCell.swift; sourceTree = "<group>"; };
+		17B3EC6F27BA373900F74B4E /* RealProjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealProjectData.swift; sourceTree = "<group>"; };
+		17B3EC7127BA3D3700F74B4E /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		17B3EC7327BB083B00F74B4E /* ProceedingProjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceedingProjectVC.swift; sourceTree = "<group>"; };
+		17B3EC9B27BB21A600F74B4E /* IngProjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngProjectVC.swift; sourceTree = "<group>"; };
+		17B3EC9D27BB265500F74B4E /* DoneProjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneProjectVC.swift; sourceTree = "<group>"; };
 		17BC91622796D4AE0058FC1F /* InQ_PM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InQ_PM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17BC91652796D4AE0058FC1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17BC91672796D4AE0058FC1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,8 +90,13 @@
 				17D0789B27A6D08900B7DD18 /* TabBarCollectionViewCell.swift */,
 				17D0789927A62DE600B7DD18 /* RecruitingVC.swift */,
 				17D0789527A293D500B7DD18 /* ProjectData.swift */,
+				17B3EC6F27BA373900F74B4E /* RealProjectData.swift */,
 				17D0788D27A262CE00B7DD18 /* CustomTableViewCell.swift */,
 				17BC916B2796D4AE0058FC1F /* Main.storyboard */,
+				17B3EC9D27BB265500F74B4E /* DoneProjectVC.swift */,
+				17B3EC9B27BB21A600F74B4E /* IngProjectVC.swift */,
+				17B3EC7327BB083B00F74B4E /* ProceedingProjectVC.swift */,
+				17B3EC7127BA3D3700F74B4E /* CardTableViewCell.swift */,
 				17D8B08727B8EADF007698EC /* JoinVC.swift */,
 				17734E6227AA049C002853FD /* TabPageCollectionViewCell.swift */,
 				17BC916E2796D4B00058FC1F /* Assets.xcassets */,
@@ -163,9 +178,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				17D0788E27A262CF00B7DD18 /* CustomTableViewCell.swift in Sources */,
+				17B3EC7027BA373900F74B4E /* RealProjectData.swift in Sources */,
 				17D8B08827B8EADF007698EC /* JoinVC.swift in Sources */,
+				17B3EC7427BB083B00F74B4E /* ProceedingProjectVC.swift in Sources */,
+				17B3EC9E27BB265500F74B4E /* DoneProjectVC.swift in Sources */,
 				17734E6327AA049C002853FD /* TabPageCollectionViewCell.swift in Sources */,
 				17BC916A2796D4AE0058FC1F /* LogInVC.swift in Sources */,
+				17B3EC9C27BB21A600F74B4E /* IngProjectVC.swift in Sources */,
 				17D0789A27A62DE600B7DD18 /* RecruitingVC.swift in Sources */,
 				17BC91662796D4AE0058FC1F /* AppDelegate.swift in Sources */,
 				17D0789627A293D500B7DD18 /* ProjectData.swift in Sources */,
@@ -173,6 +192,7 @@
 				17D0789827A6214000B7DD18 /* ProjectVC.swift in Sources */,
 				17D0788C27A25F4700B7DD18 /* HomeVC.swift in Sources */,
 				17BC91682796D4AE0058FC1F /* SceneDelegate.swift in Sources */,
+				17B3EC7227BA3D3700F74B4E /* CardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
