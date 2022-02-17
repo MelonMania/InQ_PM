@@ -29,7 +29,7 @@ class AddProjectVC: UIViewController {
     
     @IBAction func addProject(_ sender: UIButton) {
         
-        let URL = "https://61ed-115-143-100-251.ngrok.io/projects/add"
+        let URL = "https://1af1-115-143-100-251.ngrok.io/projects/add"
         
         let param = ProjectData(id: projectData.count + 1, projectName: projectID.text!, state: "RECRUIT", details: detail.text!, techList: techList.text!)
         
@@ -44,9 +44,8 @@ class AddProjectVC: UIViewController {
                     if pass.success! == true {
                         let alert = UIAlertController(title: "🎉🎉🎉", message: "프로젝트 등록이 완료되었습니다.", preferredStyle: UIAlertController.Style.alert)
                         let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
-                            guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "Project") else { return }
-                            viewController.modalPresentationStyle = .fullScreen
-                            self.present(viewController, animated: true, completion: nil) }
+                            self.presentingViewController?.dismiss(animated: true, completion: nil)
+                        }
                         alert.addAction(okAction)
                         self.present(alert, animated: false, completion: nil)
                     }

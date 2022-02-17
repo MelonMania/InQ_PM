@@ -47,13 +47,10 @@ extension DoneProjectVC : UITableViewDelegate, UITableViewDataSource {
         }
         
         // Put data into the cell
-        let target = projectData[indexPath.row]
         
-        if target.state == "FIN" {
-            cell.projectID.text = projectData[indexPath.row].projectName
-            cell.detail.text = projectData[indexPath.row].details
-            cell.techList.text = projectData[indexPath.row].techList
-        }
+        cell.projectID.text = projectData[indexPath.row].projectName
+        cell.detail.text = projectData[indexPath.row].details
+        cell.techList.text = projectData[indexPath.row].techList
         
         return cell
     }
@@ -70,7 +67,7 @@ extension DoneProjectVC {
      
         @objc func refreshTable(refresh: UIRefreshControl) {
             print("refreshTable")
-            projectManager.loadProjectList()
+            projectManager.filteringProject("FIN")
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 self.tableView.reloadData()
                 refresh.endRefreshing()

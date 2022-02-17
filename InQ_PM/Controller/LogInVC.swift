@@ -11,7 +11,6 @@ import Alamofire
 class LogInVC: UIViewController {
     
     var loginManager = LogInManager()
-    var currentMember : MemberData = MemberData.init("", "", "", "", "")
     
     @IBOutlet weak var idField: UITextField!
     @IBOutlet weak var pwField: UITextField!

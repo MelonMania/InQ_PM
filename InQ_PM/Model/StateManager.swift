@@ -1,34 +1,34 @@
 //
-//  JoinManager.swift
+//  StateManager.swift
 //  InQ_PM
 //
-//  Created by RooZin on 2022/02/16.
+//  Created by RooZin on 2022/02/17.
 //
 
 import Foundation
 import Alamofire
 
-protocol JoinManagerDelegate {
-    func joinCheck(_ data : Check)
+protocol StateManagerDelegate {
+    func stateCheck(_ data : Check)
 }
 
-class JoinManager {
+struct StateManager {
     
-    var delegate : JoinManagerDelegate?
+    var delegate : StateManagerDelegate?
     
-    func join(_ id : String, _ pw : String, _ name : String, _ position : String, _ techList : String) {
-        let URL = "https://1af1-115-143-100-251.ngrok.io/members/join"
-        let param = Member(loginId: id, pw: pw, name: name, position: position, techList: techList)
+    func changeProjectState(_ data : ProjectData, _ state : String) {
+        let URL = "https://1af1-115-143-100-251.ngrok.io/projects/edit-state?state=\(state)"
         
-        AF.request(URL, method: .post, parameters: param).responseJSON { response in
-            print("response: \(response)")
+        AF.request(URL, method: .post, parameters: data).responseJSON { response in
+            print("상태 확인!: \(response)")
             var pass : Check
             do {
                 let decoder = JSONDecoder()
                 switch (response.result) {
                 case .success:
                     pass = try decoder.decode(Check.self, from: response.data!)
-                    self.delegate?.joinCheck(pass)
+                    print("패스값 : \(pass)")
+                    delegate?.stateCheck(pass)
                 case .failure(let error):
                     print("errorCode: \(error._code)")
                     print("errorDescription: \(error.errorDescription!)")

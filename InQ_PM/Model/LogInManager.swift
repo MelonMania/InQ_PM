@@ -18,9 +18,8 @@ struct LogInManager {
     var delegate : LogInManagerDelegate?
     
     func logIn(_ id : String, _ pw : String) {
-        let URL = "https://61ed-115-143-100-251.ngrok.io/login"
+        let URL = "https://1af1-115-143-100-251.ngrok.io/login"
         let param = Login(loginId: id, pw: pw)
-        let userManager = UserManager()
         
         AF.request(URL, method: .post, parameters: param).responseJSON { response in
             print("response: \(response)")
@@ -31,7 +30,6 @@ struct LogInManager {
                 case .success:
                     pass = try decoder.decode(Check.self, from: response.data!)
                     delegate?.loginCheck(pass)
-                    userManager.getCurrentUser(id)
                 case .failure(let error):
                     print("errorCode: \(error._code)")
                     print("errorDescription: \(error.errorDescription!)")

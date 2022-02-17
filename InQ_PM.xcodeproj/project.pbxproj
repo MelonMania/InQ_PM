@@ -16,6 +16,8 @@
 		17A6930B27BD053C003D3340 /* AddProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6930A27BD053C003D3340 /* AddProjectVC.swift */; };
 		17A6930D27BD2293003D3340 /* MemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6930C27BD2292003D3340 /* MemberModel.swift */; };
 		17A6930F27BD31B8003D3340 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6930E27BD31B8003D3340 /* UserManager.swift */; };
+		17A6931427BE1373003D3340 /* MyProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6931327BE1373003D3340 /* MyProjectVC.swift */; };
+		17A6931627BE24E9003D3340 /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6931527BE24E9003D3340 /* StateManager.swift */; };
 		17B3EC7027BA373900F74B4E /* ProjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3EC6F27BA373900F74B4E /* ProjectData.swift */; };
 		17B3EC7227BA3D3700F74B4E /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3EC7127BA3D3700F74B4E /* CardTableViewCell.swift */; };
 		17B3EC7427BB083B00F74B4E /* ProceedingProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3EC7327BB083B00F74B4E /* ProceedingProjectVC.swift */; };
@@ -45,6 +47,8 @@
 		17A6930A27BD053C003D3340 /* AddProjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectVC.swift; sourceTree = "<group>"; };
 		17A6930C27BD2292003D3340 /* MemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberModel.swift; sourceTree = "<group>"; };
 		17A6930E27BD31B8003D3340 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		17A6931327BE1373003D3340 /* MyProjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectVC.swift; sourceTree = "<group>"; };
+		17A6931527BE24E9003D3340 /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
 		17B3EC6F27BA373900F74B4E /* ProjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectData.swift; sourceTree = "<group>"; };
 		17B3EC7127BA3D3700F74B4E /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		17B3EC7327BB083B00F74B4E /* ProceedingProjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceedingProjectVC.swift; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				17A6930227BCE3BF003D3340 /* ProjectManager.swift */,
+				17A6931527BE24E9003D3340 /* StateManager.swift */,
 				17A692FD27BCCDE3003D3340 /* CheckModel.swift */,
 				1726603427BC72B200F79666 /* LogInData.swift */,
 				17D0789527A293D500B7DD18 /* ProjectModel.swift */,
@@ -107,6 +112,7 @@
 				17B3EC7327BB083B00F74B4E /* ProceedingProjectVC.swift */,
 				17D8B08727B8EADF007698EC /* JoinVC.swift */,
 				17A6930A27BD053C003D3340 /* AddProjectVC.swift */,
+				17A6931327BE1373003D3340 /* MyProjectVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -120,6 +126,14 @@
 			);
 			name = Custom;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		17A6931227BD5BB5003D3340 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17BC916B2796D4AE0058FC1F /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		17BC91592796D4AE0058FC1F = {
@@ -148,7 +162,7 @@
 				17A6930027BCD9A9003D3340 /* Controller */,
 				17A692FF27BCD996003D3340 /* Model */,
 				17A6930127BCDA1C003D3340 /* Custom */,
-				17BC916B2796D4AE0058FC1F /* Main.storyboard */,
+				17A6931227BD5BB5003D3340 /* View */,
 				17BC916E2796D4B00058FC1F /* Assets.xcassets */,
 				17BC91702796D4B00058FC1F /* LaunchScreen.storyboard */,
 				17BC91732796D4B00058FC1F /* Info.plist */,
@@ -297,11 +311,13 @@
 				17BC916A2796D4AE0058FC1F /* LogInVC.swift in Sources */,
 				17A6930927BCF46A003D3340 /* HomeTableViewCell.swift in Sources */,
 				17B3ECA027BB370F00F74B4E /* RecruitTableViewCell.swift in Sources */,
+				17A6931627BE24E9003D3340 /* StateManager.swift in Sources */,
 				17A692FE27BCCDE3003D3340 /* CheckModel.swift in Sources */,
 				17A692F827BC7DFD003D3340 /* LogInManager.swift in Sources */,
 				17B3EC9C27BB21A600F74B4E /* IngProjectVC.swift in Sources */,
 				17BC91662796D4AE0058FC1F /* AppDelegate.swift in Sources */,
 				17A6930D27BD2293003D3340 /* MemberModel.swift in Sources */,
+				17A6931427BE1373003D3340 /* MyProjectVC.swift in Sources */,
 				17B3ECA227BB437D00F74B4E /* ProjectVC.swift in Sources */,
 				17D0789627A293D500B7DD18 /* ProjectModel.swift in Sources */,
 				17D0788C27A25F4700B7DD18 /* HomeVC.swift in Sources */,
